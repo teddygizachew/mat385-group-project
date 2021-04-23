@@ -1,9 +1,3 @@
-/**
- * Name Ludiana Atnafu
- * CSC 364
- * Professor: Dr. Jeffery Ward
- * Dynamic programming approach to solving a Knapsack problem
- * */
 import java.util.*;
 import java.io.*;
 
