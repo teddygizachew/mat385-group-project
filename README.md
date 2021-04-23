@@ -5,7 +5,7 @@
 
 [[knapsack.png]]
 
-* Hello, my name is Ludiana I am a Junior majoring in Computer Science and minoring in Biology. I am from Ethiopian and I currently work as a research assistant in the Computer science department. I am interested in finding ways I can apply Computer science and Biology to solve day to day problems.
+✔️Hello, my name is Ludiana I am a Junior majoring in Computer Science and minoring in Biology. I am from Ethiopia and I currently work as a research assistant in the Computer science department. I am interested in finding ways I can apply Computer science and Biology to solve day to day problems.
 
 #### Teddy Amare
 
