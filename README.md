@@ -3,19 +3,18 @@
 
 #### Ludiana Atnafu
 
-[[knapsack.png]]
-
 ✔️Hello, my name is Ludiana I am a Junior majoring in Computer Science and minoring in Biology. I am from Ethiopia and I currently work as a research assistant in the Computer science department. I am interested in finding ways I can apply Computer science and Biology to solve day to day problems.
 
 #### Teddy Amare
 
-✔️Hi there 😀! My name is Teddy Amare and I am a Sophomore majoring on Computer Science.
+✔️Hi there 😀! My name is Teddy Amare and I am a Sophomore at Northern Kentucky University majoring in Computer Science with a minor in Honors.
 
-# Budget Wise
+# BudgetWise: Dynamic Programming based Knapsack
 
-## Dynamic Programming based Knapsack
-
+[[Image:Logo size.jpg]]
 = Introduction=
+
+Github Link: https://github.com/teddygizachew/mat385-group-project
 
 Dynamic programming is an algorithmic technique for solving an optimization problem by breaking it down into simpler subproblems and utilizing the fact that the optimal solution to the overall problem depends upon the optimal solution to its subproblems in a recursive manner. The knapsack algorithm is a famous Dynamic Programing problem that falls in the optimization category. There are various examples showing the application of knapsack, however, the most known is a scenario where a set of items have specific weights and are assigned a monetary value. The goal is to maximize the value in the knapsack(bag) while it has weight constrain.
 
@@ -29,83 +28,71 @@ It is the first week of class and you, a college student wants to buy your books
 
 * The idea of applying the knapsack's algorithm into the real world was interesting to us because of how it puts into consideration the constraints while trying to make the best decision that can best benefit the person. In our day-to-day life, we are consistently having to make such decisions, and so having to make a program that can help in making the best decision would be beneficial. Especially as a college student, we believe that this program can be a helpful tool to use.
 
-## How is topic related to Discret Math
+## How is topic related to Discrete Math?
 
 * The Knapsack algorithm uses a Recurrence relation, which relates this project to one of the topics that we have learned in Discrete Mathematics. This algorithm is familiar to both of us as we have learned it in our Data Structures and Algorithms class.
-
-## Features
-
-* Import a HTML file and watch it magically convert to Markdown
-* Drag and drop images (requires your Dropbox account be linked)
-
-Markdown is a lightweight markup language based on the formatting conventions<br>
-
-that people naturally use in email.<br>
-
-As  writes on the
-
-> The overriding design goal for Markdown's<br>
-
-formatting syntax is to make it as readable<br>
-
-as possible. The idea is that a<br>
-
-Markdown-formatted document should be<br>
-
-publishable as-is, as plain text, without<br>
-
-looking like it's been marked up with tags<br>
-
-or formatting instructions.
 
 ## Languages and Technologies Used
 
 * [https://www.freecodecamp.org/news/demystifying-dynamic-programming-3efafb8d4296/ Dynamic Programming] - Read more!
-
-## Installation
-
-Budget Wise requires [https://www.freecodecamp.org/news/demystifying-dynamic-programming-3efafb8d4296/ Dynamic Programming] v10+ to run.
-
-```
-cd dillinger
-npm i
-node app
-```
+* [https://en.wikipedia.org/wiki/Java_(programming_language) Java]
 
 ## The Algorithm
-The program 
-The algorithm 
 
-First Tab:
+[[Image:KnapsackDiagram.PNG]]
 
-```
-node app
-```
-
-Second Tab:
+The program starts by asking the user for input. The inputs are listed below:
 
 ```
-gulp watch
+Enter the total budget: 150
+Enter the name of input file: BooksList.txt
+Enter the name of output file: result.txt
 ```
 
-(optional) Third:
+The user will enter the budget they have to buy the course materials for that semester. We decided to read the inputs from a file because the user might have a large number of data sets.
+The input includes a course name, price for the required materials in that course and the total number of percentage gained for buying the book in that course to do the assignments.
+The following image shows what the input might look like:
+
+<br>
+
+[[Image:InputFileImage.png]]
+<br>
+
+The result will also be written to a file rather than being displayed in the terminal. After we get the input, we will be using the budget to determine the best selection of books that will gain the user the most points according to the specific metrics (in our case, the most percentage gained).
+
+We created a Course object that contains the book, it's price and total percentage.
 
 ```
-karma <span class="hljs-built_in">test</span>
+public static class Course {
+        private final String bookName;
+        private final int bookPrice;
+        private final int percent;
+
+        public Course(String bookName, int bookPrice, int percent) {
+            this.bookName = bookName;
+            this.bookPrice = bookPrice;
+            this.percent = percent;
+        }
+    }
 ```
 
-#### Building for source
-
-For production release:
+The following short extract from our program shows how the algorithm chooses the max possible amount of points within the book price range.
 
 ```
-gulp build --prod
-```
-
-Generating pre-built zip archives for distribution:
-
-```
-gulp build dist --prod
+Course course = coursesList.get(j - 1);
+if (course.bookPrice > i) {
+    knapsack[i][j] = knapsack[i][j - 1];
+} else {
+    knapsack[i][j] = Math.max(knapsack[i - course.bookPrice][j - 1] + course.percent, knapsack[i][j - 1]);
+}
 ```
 
 = Summary =
+The knapsack problem is just one of many applications of dynamic programming with the use of recurrence relations.
+
+## Reference
+
+* https://www.freecodecamp.org/news/demystifying-dynamic-programming-3efafb8d4296/
+* https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/m2G1pAq0OO0
+* https://www.section.io/engineering-education/introduction-to-dynamic-programming/#:~:text=Dynamic%20Programming%20(DP)%20is%20an,DP%20and%20how%20it%20works.
+
