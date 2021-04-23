@@ -1,5 +1,4 @@
 # mat385-group-project
-= Team Members =
 
 #### Ludiana Atnafu
 
@@ -87,7 +86,6 @@ if (course.bookPrice > i) {
 }
 ```
 
-= Summary =
 The knapsack problem is just one of many applications of dynamic programming with the use of recurrence relations.
 
 ## Reference
