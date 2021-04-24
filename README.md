@@ -13,6 +13,7 @@ Team Members
 # Budgetwise: Dynamic Programming based Knapsack
 
 [[Image:Logo size.jpg|center]]
+<img src="logo_size.jpg">
 Introduction
 
 Github Link: https://github.com/teddygizachew/mat385-group-project
