@@ -11,10 +11,7 @@ Team Members
 ✔️Hi there 😀! My name is Teddy Amare and I am a Sophomore at Northern Kentucky University majoring in Computer Science with a minor in Honors.
 
 # Budgetwise: Dynamic Programming based Knapsack
-
-[[Image:Logo size.jpg|center]]
 <img src="logo_size.jpg">
-Introduction
 
 Github Link: https://github.com/teddygizachew/mat385-group-project
 
@@ -23,6 +20,7 @@ Dynamic programming is an algorithmic technique for solving an optimization prob
 For our project, we wanted to use knapsack for solving a real-world problem we may face as a college student. The problem we chose to work on is how a student can get as much books as they can while being under a budget constrain. We wrote a Dynamic program that uses knapsack algorithm to solve this problem, and we called our program Budgetwise. The Scenario of our project is explained below.
 
 [[Image:bookstore.jpg|300px]]
+<img src="bookstore.jpg">
 
 ## Scenario
 
@@ -44,7 +42,7 @@ It is the first week of class and you, a college student wants to buy your books
 
 ## The Algorithm
 
-[[Image:KnapsackDiagram.PNG|center]]
+<img src="KnapsackDiagram.PNG">
 
 The program starts by asking the user for input. The inputs are listed below:
 
@@ -60,7 +58,7 @@ The following image shows what the input might look like:
 
 <br>
 
-[[Image:InputFileImage.png]]
+<img src="InputFileImage.png">
 <br>
 
 The result will also be written to a file rather than being displayed in the terminal. After we get the input, we will be using the budget to determine the best selection of books that will gain the user the most points according to the specific metrics (in our case, the most percentage gained).
@@ -94,7 +92,7 @@ if (course.bookPrice > i) {
 
 Output
 
-[[Image:OutputFile.png]]
+<img src="Outputfile.png">
 
 Summary
 The knapsack problem is just one of many applications of dynamic programming with the use of recurrence relations. Dynamic Programming is a technique of breaking down a problem into subproblems, solving these subproblems once, and storing their solutions. By storing these solutions, we can simply check them if the same problem resurfaces. Doing this saves us a lot of computation time since we don't have to calculate the solution again.
