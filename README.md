@@ -58,7 +58,7 @@ The following image shows what the input might look like:
 
 <br>
 
-<img src="InputFileImage.png">
+<img src="Inputfile.png">
 <br>
 
 The result will also be written to a file rather than being displayed in the terminal. After we get the input, we will be using the budget to determine the best selection of books that will gain the user the most points according to the specific metrics (in our case, the most percentage gained).
