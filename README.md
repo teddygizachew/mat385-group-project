@@ -97,7 +97,7 @@ Output
 Summary
 The knapsack problem is just one of many applications of dynamic programming with the use of recurrence relations. Dynamic Programming is a technique of breaking down a problem into subproblems, solving these subproblems once, and storing their solutions. By storing these solutions, we can simply check them if the same problem resurfaces. Doing this saves us a lot of computation time since we don't have to calculate the solution again.
 
-# Next Steps
+## Next Steps
 The following step moving forward would be implementing a user interface. One easy approach would be to use JavaFX. We could add additional functionality to the program by providing a more customized and personalized input.
 
 Contribution
