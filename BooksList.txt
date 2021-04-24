@@ -1,4 +1,0 @@
-Course1 6 2
-Course2 2 5
-Course3 4 3
-Course4 3 6
